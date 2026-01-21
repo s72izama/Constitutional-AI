@@ -1,0 +1,17 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Hugging Face / model caches
+cache/
+src/cache/
+**/models--*/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
