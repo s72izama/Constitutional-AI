@@ -17,9 +17,11 @@ echo "JOBID: $SLURM_JOB_ID"
 
 nvidia-smi || true
 
+export MY_VENV="qwen_env_gpu"
+
 module purge
 module load Python/3.11.3-GCCcore-12.3.0
-source venv/bin/activate
+source $MY_VENV/bin/activate
 
 # Caches in project space
 export HF_HOME="$SLURM_SUBMIT_DIR/.hf"

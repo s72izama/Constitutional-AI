@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=32G
-#SBATCH --time=00:30:00
+#SBATCH --time=04:00:00
 #SBATCH --output=logs/install-%j.out
 #SBATCH --error=logs/install-%j.err
 
